@@ -29,9 +29,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 Portfolio <a name="about-project"></a>
+# 📖 To-Do list <a name="about-project"></a>
 
-Hetroxity academy is an online based computer programming institution . our goal is to provide flexible knowledge that is global
+To-Do list is a Project which its main feature is for the Client to add , remove or mark completed Task he initially Assigned.
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML

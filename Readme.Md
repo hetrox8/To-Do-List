@@ -115,7 +115,7 @@ Deploy this project on any web server
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Anshuman Singh Negi **
+👤 **Suleiman Gacheru **
 
 - GitHub: [@githubhandle](https://github.com/suleiman)
 - Twitter: [@twitterhandle](https://twitter.com/Asuleiman)

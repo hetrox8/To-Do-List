@@ -1,23 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
 }
 
 body {
   background-color: #eee;
 }
 
-.container {
+.wrapper {
+  border-radius: 20px 20px;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 75%;
   margin: 10rem auto;
   padding: 20px;
   background-color: #fff;
 }
 
-.main {
+.head {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,6 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 12px;
+  align-items: center;
 }
 
 input {
@@ -44,13 +49,50 @@ input[type="text"]:focus {
   outline: none;
 }
 
+.addData {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
 button {
   border: none;
   background-color: #fff;
-  padding-top: 20px;
 }
 
 .rowData {
   display: flex;
   gap: 10px;
+}
+
+.completed {
+  text-decoration: 2px line-through red;
+}
+
+.clear-btn {
+  padding: 20px 0;
+}
+
+.clear-btn:hover {
+  color: red;
+}
+
+.fa-trash {
+  color: gray;
+}
+
+.fa-trash:hover {
+  color: red;
+}
+
+.fa-level-down-alt::before,
+.fa-turn-down::before {
+  content: "\f3be";
+  color: greenyellow;
+}
+
+.fa-rotate::before,
+.fa-sync-alt::before {
+  content: "\f2f1";
+  color: cornflowerblue;
 }

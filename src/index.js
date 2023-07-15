@@ -2,8 +2,6 @@ import './styles.css';
 import AddList from './modules/DO.js';
 import CrudOperations from './modules/NP.js';
 
-
-
 const myCrud = new CrudOperations();
 const myList = new AddList();
 

@@ -1,5 +1,5 @@
 import './styles.css';
-import './modules/DO.js'
+import './src/modules/DO.js';
 import CrudOperations from './modules/NP.js';
 
 const myCrud = new CrudOperations();

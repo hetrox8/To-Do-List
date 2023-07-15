@@ -59,7 +59,7 @@ To-Do list is a Project which its main feature is for the Client to add , remove
 
 <!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://hetrox8.github.io/First-Capstone-Project/)
+- [Live Demo Link](https://hetrox8.github.io/To-Do-List/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 

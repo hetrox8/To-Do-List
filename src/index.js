@@ -1,5 +1,4 @@
 import './styles.css';
-import AddList from './DO.js';
 import CrudOperations from './modules/NP.js';
 
 const myCrud = new CrudOperations();

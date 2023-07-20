@@ -1,4 +1,6 @@
-export default class AddList {
+import { addRow, deleteRow } from '../functions';
+
+export class AddList {
   constructor() {
     const previousData = localStorage.getItem('todoData');
     this.todoDetails = previousData ? JSON.parse(previousData) : [];
@@ -13,8 +15,8 @@ export default class AddList {
       for (let i = 0; i < this.todoDetails.length; i += 1) {
         row.innerHTML += `<li class="removeLine">
                               <div class="rowData"><input class="edit-text" type="checkbox" ${
-  this.todoDetails[i].completed ? 'checked' : ''
-} />
+          this.todoDetails[i].completed ? 'checked' : ''
+        } />
                               <input class="editBtn" type="text" value="${this.todoDetails[i].title}" data-index="${i}" readonly /></div>
                               <button id="${this.todoDetails[i].index}" class="remove-btn"><i class="fas fa-trash"></i></button>
                             </li><hr>`;
@@ -46,18 +48,16 @@ export default class AddList {
     }
   }
 
-  addRow(title, completed, index) {
-    const todo = { title, completed, index };
-    this.todoDetails.push(todo);
-    localStorage.setItem('todoData', JSON.stringify(this.todoDetails));
+  // Add the following methods to use the functions from functions.js
+
+  addRow(title, completed) {
+    const index = this.todoDetails.length + 1;
+    addRow(this.todoDetails, title, completed, index);
+    this.displayList();
   }
 
   deleteRow(index) {
-    this.todoDetails.splice(index, 1);
-    for (let i = index; i < this.todoDetails.length; i += 1) {
-      this.todoDetails[i].index = i + 1;
-    }
-    localStorage.setItem('todoData', JSON.stringify(this.todoDetails));
+    deleteRow(this.todoDetails, index);
     this.displayList();
   }
 
